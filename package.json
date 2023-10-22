@@ -2,7 +2,7 @@
   "name": "voicevox-tools",
   "displayName": "voicevox-tools",
   "description": "voicevox用の原稿を作成する際に使えるツールです。",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.83.0"
   },
