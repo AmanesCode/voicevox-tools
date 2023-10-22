@@ -23,6 +23,7 @@
       }
     ]
   },
+  "icon": "icon/icon.jpg",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
