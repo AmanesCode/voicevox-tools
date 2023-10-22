@@ -24,6 +24,12 @@
     ]
   },
   "icon": "icon/icon.jpg",
+  "publisher": "AmanesCode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmanesCode/voicevox-tools.git"
+  },
+  "licence": "MIT",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
