@@ -1,71 +1,22 @@
-# voicevox-tools README
+# voicevox-tools
 
-This is the README for your extension "voicevox-tools". After writing up a brief description, we recommend including the following sections.
+vscode 内で選択した際に行頭に VOICEVOX のキャラ名を付加するコマンドなどを追加します<br>
+複数のキャラが出る原稿作成などで使えます。
 
-## Features
+## 詳細
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+① キャラ名を付加したい行を選択<br>
+②Shift+Ctrl+P でコマンドパレットを開き、"addTextToSelectionWithLine"というコマンドを選びます。<br>
+③ 追加したいキャラ名を探して選択します<br>
+④ 行頭にキャラ名が追加されます。<br>
+<br>
+一度に複数行を選択して追加することも可能です。
 
-For example if there is an image subfolder under your extension project workspace:
+## 拡張機能の追加
 
-\!\[feature X\]\(images/feature-x.png\)
+VSCODE の拡張機能検索欄から voicevox-tools と検索すると出てくると思います。
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## その他
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+動かないことやわからないことがあれば issue などを作成していただければ気づいたときに出来る限り答えます。<br>
+キャラが増えたりした際には気が向いたときに更新したいと思います。
