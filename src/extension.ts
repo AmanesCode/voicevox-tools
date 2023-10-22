@@ -2,6 +2,7 @@ import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
   let commands: vscode.Disposable[] = [];
+  // 行頭に任意の文字列を追加するコマンド
   commands.push(
     vscode.commands.registerCommand("voicevox-tools.addTextToSelection", () => {
       const editor = vscode.window.activeTextEditor;
@@ -35,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
     })
   );
-
+  // 行頭にキャラクター名を追加するコマンド
   commands.push(
     vscode.commands.registerCommand(
       "voicevox-tools.addTextToSelectionWithLine",
@@ -107,6 +108,33 @@ export function activate(context: vscode.ExtensionContext) {
       }
     )
   );
+  // 行頭のキャラクター名を削除するコマンド
+  commands.push(
+    vscode.commands.registerCommand(
+      "voicevox-tools.deleteCharacterNameFromSelection",
+      () => {
+        const editor = vscode.window.activeTextEditor;
+        if (editor) {
+          const selections = editor.selections;
+
+          // 選択肢を受け取った後にエディタの変更を行う
+          editor.edit((editBuilder) => {
+            selections.forEach((selection) => {
+              for (let i = selection.start.line; i <= selection.end.line; i++) {
+                const line = editor.document.lineAt(i);
+                const text = line.text;
+
+                // 入力されたテキストを選択された行の先頭に追加します
+                const newText = text.replace(/^[^,]*,/, "");
+                editBuilder.replace(line.range, newText);
+              }
+            });
+          });
+        }
+      }
+    )
+  );
+  // コマンドを登録します
   commands.forEach((element) => {
     context.subscriptions.push(element);
   });

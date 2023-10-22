@@ -20,6 +20,10 @@
       {
         "command": "voicevox-tools.addTextToSelectionWithLine",
         "title": "addTextToSelectionWithLine"
+      },
+      {
+        "command": "voicevox-tools.deleteCharacterNameFromSelection",
+        "title": "deleteCharacterNameFromSelection"
       }
     ],
     "menus": {
@@ -32,6 +36,11 @@
         {
           "when": "editorTextFocus",
           "command": "voicevox-tools.addTextToSelectionWithLine",
+          "group": "navigation"
+        },
+        {
+          "when": "editorTextFocus",
+          "command": "voicevox-tools.deleteCharacterNameFromSelection",
           "group": "navigation"
         }
       ]
