@@ -21,7 +21,21 @@
         "command": "voicevox-tools.addTextToSelectionWithLine",
         "title": "addTextToSelectionWithLine"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorTextFocus",
+          "command": "voicevox-tools.addTextToSelection",
+          "group": "navigation"
+        },
+        {
+          "when": "editorTextFocus",
+          "command": "voicevox-tools.addTextToSelectionWithLine",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "icon": "icon/icon.jpg",
   "publisher": "AmanesCode",
