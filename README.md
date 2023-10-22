@@ -6,7 +6,8 @@ vscode 内で選択した際に行頭に VOICEVOX のキャラ名を付加する
 ## 詳細
 
 ① キャラ名を付加したい行を選択<br>
-②Shift+Ctrl+P でコマンドパレットを開き、"addTextToSelectionWithLine"というコマンドを選びます。<br>
+② エディタ上で右クリック または Shift+Ctrl+P を押してコマンドパレットを開きます
+③"addTextToSelectionWithLine"というコマンドを選びます<br>
 ③ 追加したいキャラ名を探して選択します<br>
 ④ 行頭にキャラ名が追加されます。<br>
 <br>
